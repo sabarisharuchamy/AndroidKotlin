@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.appin.kotlinexamples">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".GoogleMapSearchLocationEx"></activity>
+        <activity android:name=".GoogleMapCurrentLocationEx" />
+        <activity android:name=".MapsActivity" />
+        <activity android:name=".GoogleAdmobInterstitialAdsEx" />
+        <activity android:name=".GoogleAdmobBannerAdsEx" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".FirebaseAuthenticationGoogleLogin" />
+        <activity android:name=".GoogleRecaptchaEx" />
+        <activity android:name=".AndroidVideoViewEx" />
+        <activity android:name=".AndroidMediaPlayerEx" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".AndroidWebServiceEx" />
+        <activity
+            android:name=".NotificationView"
+            android:parentActivityName=".AndroidNotificationEx">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AndroidNotificationEx" />
+        </activity>
+        <activity android:name=".AndroidNotificationEx" />
+        <activity android:name=".SQLiteStorageEx" />
+        <activity android:name=".SharedPreferencesEx" />
+        <activity android:name=".InternalStorageReadWrite" />
+        <activity android:name=".ExternalStorageReadWrite" />
+        <activity android:name=".JsonParsingUsingUrl" />
+        <activity android:name=".TabWithSwipeableViews" />
+        <activity android:name=".XMLParsingUsingXMLPullParser" />
+        <activity android:name=".XMLParsingUsingSAXParser" />
+        <activity android:name=".XMLParsingUsingDOMParser" />
+        <activity android:name=".TabWithFrameEx" />
+        <activity android:name=".SeekBarEx" />
+        <activity android:name=".WebViewEx" />
+        <activity android:name=".PopUpMenuEx" />
+        <activity android:name=".OptionsMenuEx" />
+        <activity android:name=".ContextMenuExample" />
+        <activity android:name=".AlertDialogEx" />
+        <activity android:name=".ListViewEx" />
+        <activity android:name=".ExplicitIntent" />
+        <activity android:name=".ImplicitIntent" />
+        <activity android:name=".ExplicitIntent2" />
+        <activity android:name=".ButtonEx" />
+        <activity android:name=".ToastEx" />
+        <activity android:name=".EditTextAndTextView" />
+        <activity android:name=".TabLayoutWithViewPager" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+    </application>
+
+</manifest>
